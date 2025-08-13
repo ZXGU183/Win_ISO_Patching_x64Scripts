@@ -347,7 +347,6 @@ set _wimlib=wimlib-imagex.exe
 if not defined _wimlib (
 if exist "wimlib-imagex.exe" set _wimlib="!_work!\wimlib-imagex.exe"
 if exist "bin\wimlib-imagex.exe" set _wimlib="!_work!\bin\wimlib-imagex.exe"
-if /i %xOS%==amd64 if exist "bin\bin64\wimlib-imagex.exe" set _wimlib="!_work!\bin\bin64\wimlib-imagex.exe"
 )
 if defined _wimlib (
 if %UseWimlib% equ 1 set _wlib=1
